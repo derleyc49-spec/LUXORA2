@@ -1,0 +1,118 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+  font-family:Arial;
+}
+
+body{
+  background:#070707;
+  color:white;
+}
+
+.hero{
+  height:100vh;
+  background:url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2000&auto=format&fit=crop")
+  center/cover;
+  display:flex;
+  flex-direction:column;
+}
+
+.navbar{
+  position:fixed;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:rgba(0,0,0,0.5);
+  backdrop-filter:blur(10px);
+}
+
+.logo{
+  font-size:30px;
+  font-weight:bold;
+}
+
+.navbar ul{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+}
+
+.cart{
+  font-size:20px;
+}
+
+.heroContent{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.heroContent h1{
+  font-size:90px;
+}
+
+.heroContent button{
+  padding:15px 35px;
+  margin-top:20px;
+  cursor:pointer;
+}
+
+.section{
+  padding:100px 40px;
+}
+
+.dark{
+  background:#101010;
+}
+
+.section h2{
+  text-align:center;
+  font-size:45px;
+  margin-bottom:40px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#151515;
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.4s;
+  transform-style:preserve-3d;
+}
+
+.card:hover{
+  transform:rotateY(8deg) rotateX(6deg) scale(1.05);
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.cardContent{
+  padding:15px;
+}
+
+.card button{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  border:none;
+  cursor:pointer;
+}
